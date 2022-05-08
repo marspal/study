@@ -2,3 +2,23 @@
 $color-primary: #ff5777;
 $color-white: #ffffff;
 $color-black: #000;
+
+$color-text-primary: #333333;
+$color-text-secondary: #666666;
+$color-text-tertiary: $color-white;
+
+$boder-color-base: #5e5e5e;
+
+$background-color-primary: #f1f1f1;
+$background-color-secondary: $color-white;
+$background-color-tertiary: $color-primary;
+
+/** Border **/
+$border-width-base: 1px !default;
+$border-style-base: solid !default;
+$border-base: $border-width-base $border-style-base $boder-color-base !default;
+
+/*** z-index **/
+$index-normal: 1;
+$index-top: 1000;
+$index-popper: 2000;

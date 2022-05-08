@@ -7,7 +7,7 @@ module.exports = defineConfig({
       //   additionalData: `@import "~@/style/tools/_sassMagic.scss";`,
       // },
       scss: {
-        additionalData: `@import "~@/style/tools/_sassMagic.scss";`,
+        additionalData: `@import "@/style/settings/var.scss";@import "~@/style/tools/_sassMagic.scss";`,
       },
     },
   },

@@ -1,0 +1,17 @@
+@each $style in (primary $color-text-primary, secondary $color-text-secondary) {
+  [font-#{nth($style, 1)}] {
+    color: #{nth($style, 2)};
+  }
+}
+
+@each $style in (primary $background-color-primary, secondary $background-color-secondary) {
+  [bg-#{nth($style, 1)}] {
+    background-color: #{nth($style, 2)};
+  }
+}
+
+@each $i in 0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1 {
+  [bga#{$i * 10}] {
+    background-color: rgba($color: #000000, $alpha: $i);
+  }
+}

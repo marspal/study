@@ -1,25 +1,18 @@
 <template>
-  <header>CSS 架构</header>
-  <div></div>
+  <div class="home">
+    <div class="home__item1">11</div>
+    <div class="home__item2">22</div>
+    <div class="home__item3">33</div>
+    <div class="home__item4">44</div>
+  </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
-// import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
-
-@Options({
-  components: {
-    // HelloWorld,
-  },
-})
-export default class HomeView extends Vue {}
-</script>
 <style lang="scss" scoped>
 header {
   width: 200px;
   height: 200px;
   background: rgba(#000, 0.4);
-  color: #fff;
+  color: $color-primary;
   @include box-center(center, center);
 }
 </style>

@@ -1,22 +1,22 @@
 import Mock from "mockjs";
 
 Mock.setup({
-  timeout: "300-600"
+  timeout: "300-600",
 });
 
 Mock.mock("/api/user", "get", getUser);
 
-function getUser(){
+function getUser() {
   return Mock.mock({
     "data|30": [
       {
-        "name": "@cname",
-        "city": "@city",
-        "age|2": "@integer(1,9)"
-      }
+        name: "@cname",
+        city: "@city",
+        "age|2": "@integer(1,9)",
+      },
     ],
-    "status": "200",
-    "msg": 请求成功
+    status: "200",
+    msg: 请求成功,
   });
 }
 
@@ -31,4 +31,4 @@ function getUser(){
 //     }]
 // })
 // // 输出结果
-console.log(JSON.stringify(getUser(), null, 4))
+console.log(JSON.stringify(getUser(), null, 4));

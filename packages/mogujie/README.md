@@ -103,3 +103,54 @@ example
 
 - Tools 层
   引入 SassMagic 工具库 提供了常见的 mixin function
+
+- Base 层代码实现
+
+1. Generic: 引入 normalize.css 重置浏览器默认样式 (npm i normalize.css); 并在 main 中引入
+2. Base 对各类样式基础进行补充
+
+- Components 层代码实现
+
+1. OOCSS -> BEM(进阶版 OOCSS)
+2. 经典组件: 栅格 Row Col、布局 Layout、Header、Main、footer、aside
+3. 自定义组件
+
+- ACSS 层代码实现
+
+1. 让样式极限复用
+2. 解决 Acss 无语义化缺点: 属性选择器
+3. Settings 与 Acss 关系
+
+```css
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+
+<div fl p-4></div>
+<style>
+  [fl] {
+    float: left;
+  }
+  [p-4] {
+    padding: 8px;
+  }
+  [fz12] { // 存在多次的时候 才有理由做成acss属性
+    font-size: 12px;
+  }
+  [color333] {
+    color: #333;
+  }
+</style>
+```
+
+关系: 可以来源于 setting 下的变量
+
+- theme 层相关
+
+  `实现: `只要加一个属性选择器就可以了; 属性提升到 html 标签
+
+// todo: 2-22
