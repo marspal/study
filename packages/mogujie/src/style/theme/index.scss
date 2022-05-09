@@ -1,0 +1,28 @@
+@import "./cool.scss";
+@import "./default.scss";
+@import "./warm.scss";
+
+$theme: (
+  default: $theme-default,
+  cool: $theme-cool,
+  warm: $theme-warm
+);
+
+@mixin themable {
+  @each $section, $map in $theme {
+    $map: $map !global;
+    [data-theme=#{$section}] & {
+      @content;
+    }
+  }
+}
+
+@function themed($key, $color) {
+  @return map-get($map: map-get($map, $key), $key: $color);
+}
+
+@mixin box {
+  @include themable {
+    background: themed("box", "background");
+  }
+}

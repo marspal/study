@@ -1,15 +1,22 @@
-[data-theme="cool"] .box {
-  background: blue;
-}
+// [data-theme="cool"] .box {
+//   background: blue;
+// }
 
-[data-theme="cool"] .text {
-  color: blue;
-}
+// [data-theme="cool"] .text {
+//   color: blue;
+// }
 
-[data-theme="cool"] .home__item1 {
-  color: blue;
-}
+// [data-theme="cool"] .home__item1 {
+//   color: blue;
+// }
 
-[data-theme="cool"] .home__item3 {
-  color: blue;
-}
+// [data-theme="cool"] .home__item3 {
+//   color: blue;
+// // }
+
+$theme-cool: (
+  box: (background: blue),
+  text: (color: blue),
+  home__item1: (color: blue),
+  home__item3: (color: blue)
+);

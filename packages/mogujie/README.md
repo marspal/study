@@ -153,4 +153,26 @@ example
 
   `实现: `只要加一个属性选择器就可以了; 属性提升到 html 标签
 
-// todo: 2-22
+### 本地 mockJS
+
+- 几种方式
+
+1. Rap 编写接口文档(淘宝), Mock 数据，后端维护
+2. Swagger 注解生成文档, Mock 数据， 后端维护
+3. 本地 MockJS, 前端维护
+
+- MockJs 搭建 (Restful 接口)
+
+### 响应式布局
+
+- 方案: REM、VW、REM + VW
+
+// todo: 3-4
+
+流程中心待做:
+
+1. 编辑器 1.0
+2. 业务组件完善
+3. 监控 rrweb
+4. form-sdk pc 端 h5 端
+5. 动态表单接入 SDK

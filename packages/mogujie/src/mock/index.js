@@ -1,24 +1,11 @@
 import Mock from "mockjs";
+import mall from "./mall";
 
 Mock.setup({
   timeout: "300-600",
 });
 
-Mock.mock("/api/user", "get", getUser);
-
-function getUser() {
-  return Mock.mock({
-    "data|30": [
-      {
-        name: "@cname",
-        city: "@city",
-        "age|2": "@integer(1,9)",
-      },
-    ],
-    status: "200",
-    msg: 请求成功,
-  });
-}
+Mock.mock("/api/users", "get", mall.getUser);
 
 // 使用 Mock
 // var Mock = require('mockjs')
@@ -31,4 +18,5 @@ function getUser() {
 //     }]
 // })
 // // 输出结果
-console.log(JSON.stringify(getUser(), null, 4));
+// console.log(JSON.stringify(getUser(), null, 4));
+export default Mock;

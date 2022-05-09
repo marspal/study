@@ -8,7 +8,8 @@ request.interceptors.request.use((config) => {
 });
 
 request.interceptors.response.use((response) => {
-  return response;
+  // 状态码 找到对应的message
+  return response.data;
 });
 
 export default request;

@@ -1,15 +1,21 @@
-[data-theme="warm"] .box {
-  background: yellow;
-}
+// [data-theme="warm"] .box {
+//   background: yellow;
+// }
 
-[data-theme="warm"] .text {
-  color: yellow;
-}
+// [data-theme="warm"] .text {
+//   color: yellow;
+// }
 
-[data-theme="warm"] .home__item1 {
-  color: yellow;
-}
+// [data-theme="warm"] .home__item1 {
+//   color: yellow;
+// }
 
-[data-theme="warm"] .home__item3 {
-  color: yellow;
-}
+// [data-theme="warm"] .home__item3 {
+//   color: yellow;
+// }
+$theme-warm: (
+  box: (background: yellow),
+  text: (color: yellow),
+  home__item1: (color: yellow),
+  home__item3: (color: yellow)
+)

@@ -1,14 +1,21 @@
-[data-theme="default"] .box {
-  background: pink;
-}
-[data-theme="default"] .text {
-  color: pink;
-}
+// [data-theme="default"] .box {
+//   background: pink;
+// }
+// [data-theme="default"] .text {
+//   color: pink;
+// }
 
-[data-theme="default"] .home__item1 {
-  color: pink;
-}
+// [data-theme="default"] .home__item1 {
+//   color: pink;
+// }
 
-[data-theme="default"] .home__item3 {
-  color: pink;
-}
+// [data-theme="default"] .home__item3 {
+//   color: pink;
+// }
+
+$theme-default: (
+  box: (background: pink),
+  text: (color: pink),
+  home__item1: (color: pink),
+  home__item3: (color: pink)
+);
