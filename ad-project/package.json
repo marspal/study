@@ -1,0 +1,16 @@
+{
+  "name": "ad-project",
+  "version": "1.0.0",
+  "description": "### 第二章",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "",
+    "build": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
