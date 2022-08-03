@@ -8,7 +8,7 @@
 
 `packages:` babel7 相关、webpack5 相关、loader（文件预处理）相关、React 相关
 
-![babel](./docs/babel.png) babel-core: 将新版的 JS 语法转换为 AST; plugin-transform-runtime: 新的 API polyfill, 解决大量重复 polyfill, helper; 从一个统一的地方引用 解决大量的变量污染问题 preset-env: 转化 ES 最新的语法，preset-react:转化 react jsx 语法
+![babel](./docs/babel.png) babel-core: 将新版的 JS 语法转换为 AST; plugin-transform-runtime: 新的 API polyfill, 解决大量重复 polyfill, helper; 从一个统一的地方引用 解决大量的变量污染问题; preset-env: 转化 ES 最新的语法，preset-react:转化 react jsx 语法
 
 ![webpack](./docs/webpack.png)
 
@@ -21,3 +21,9 @@
 1. package.json 配置
 2. webpack 配置
 3. 本地开发环境启动与打包验证
+
+FAQ:
+
+1. 使用 webpack5 时出现打包出错怎么办?
+
+检查当前版本的配置规则是否正确, 调整某个依赖包的版本
