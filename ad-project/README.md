@@ -27,3 +27,11 @@ FAQ:
 1. 使用 webpack5 时出现打包出错怎么办?
 
 检查当前版本的配置规则是否正确, 调整某个依赖包的版本
+
+2.2 eslint 相关配置
+
+> 安装 Eslint 相关的包
+
+eslint@7.13.0 eslint-config-airbnb@18.2.1 eslint-plugin-import@2.22.1 eslint-plugin-jsx-a11y@6.4.1 eslint-plugin-react@7.21.5 eslint-plugin-react-hooks@4.2.0
+
+> 编辑 Eslint 配置文件.eslintrc.json
