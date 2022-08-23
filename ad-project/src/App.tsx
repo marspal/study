@@ -1,7 +1,9 @@
 import React from 'react';
 import './style.scss';
 
-class App extends React.Component {
+interface IProps {}
+
+class App extends React.Component<IProps> {
   render() {
     return (
       <div style={{ color: 'blue' }} className="box">

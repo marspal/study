@@ -3,8 +3,15 @@
     "browser": true
   },
   "extends": ["airbnb"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "@typescript-eslint/eslint-plugin"],
   "rules": {
     "indent": ["error", 2],
-    "react/prefer-stateless-function": "off"
+    "react/prefer-stateless-function": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "no-use-before-define": "off"
   }
 }

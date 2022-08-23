@@ -35,3 +35,14 @@ FAQ:
 eslint@7.13.0 eslint-config-airbnb@18.2.1 eslint-plugin-import@2.22.1 eslint-plugin-jsx-a11y@6.4.1 eslint-plugin-react@7.21.5 eslint-plugin-react-hooks@4.2.0
 
 > 编辑 Eslint 配置文件.eslintrc.json
+
+2.3 ts 配置
+
+1. 安装 ts 相关 npm 包
+   typescript@4.0.5 @types/react @types/react-dom
+
+@typescript-eslint/eslint-plugin @typescript-eslint/parser
+
+2. 编辑 ts 配置文件 tsconfig.json
+
+tsc
