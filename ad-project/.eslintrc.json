@@ -12,6 +12,27 @@
       "error",
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     ],
-    "no-use-before-define": "off"
+    "no-use-before-define": "off",
+    "import/extensions": "off"
+  },
+  "overrides": [
+    {
+      "files": ["./config/*.config.js"],
+      "rules": {
+        "import/no-extraneous-dependencies": [
+          "error",
+          { "devDependencies": true }
+        ]
+      }
+    }
+  ],
+  "settings": {
+    // 解决webpack eslint别名一致性问题
+    "import/resolver": {
+      "alias": {
+        "map": [["pages", "./src/pages"]],
+        "extensions": [".ts", ".tsx", ".js", ".jsx", ".json", ".d.ts"]
+      }
+    }
   }
 }

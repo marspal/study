@@ -1,4 +1,4 @@
-## 广告营销平台
+## 广告营销平台 2-6
 
 ### 第二章
 
@@ -45,4 +45,14 @@ eslint@7.13.0 eslint-config-airbnb@18.2.1 eslint-plugin-import@2.22.1 eslint-plu
 
 2. 编辑 ts 配置文件 tsconfig.json
 
-tsc
+tsc --init
+
+2.4 React Router 配置
+
+![beforehash](./docs/before_hash.png)
+
+1. 安装相关的包
+
+react-router@5.2.0 react-router-config@5.1.1 @types/react-router-config@5.0.3 react-router-dom@5.2.0
+
+npm install eslint-import-resolver-alias --save-dev 解决 eslintimport/no-unresolved (webpack、eslintrc aligns 不一致问题)
