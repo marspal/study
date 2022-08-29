@@ -56,3 +56,19 @@ tsc --init
 react-router@5.2.0 react-router-config@5.1.1 @types/react-router-config@5.0.3 react-router-dom@5.2.0
 
 npm install eslint-import-resolver-alias --save-dev 解决 eslintimport/no-unresolved (webpack、eslintrc aligns 不一致问题)
+
+2.5 安装 antd
+
+第三章
+
+3.1 js css 文件的打包分离
+
+1. 优点
+   a: 减少单个文件的体积, 进而提升加载速度
+   b: 相互独立修改，互补影响
+   c: css 文件房在 index.html 文档顶部，让浏览器优先解析 css
+
+2. 实战操作
+
+a: 安装并配置 mini-css-extract-plugin
+b: js 与 css 文件打包分离验证

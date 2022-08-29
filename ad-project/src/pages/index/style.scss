@@ -1,0 +1,13 @@
+.index-page {
+  height: 100vh;
+  position: relative;
+  .middle-box {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: red;
+    transform: translate(-50%, -50%);
+  }
+}
