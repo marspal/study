@@ -72,3 +72,28 @@ npm install eslint-import-resolver-alias --save-dev 解决 eslintimport/no-unres
 
 a: 安装并配置 mini-css-extract-plugin
 b: js 与 css 文件打包分离验证
+
+3.2 面向 webpack 的本地 mock 方案
+
+1. webpack-api-mocker
+2. webpack-mock-server
+3. 手写一个 mock 插件/中间件
+
+核心原理: 启动 devServer -> 在 devServer 的 before 调用 mock 中间件 -> 执行 mock 中间件 -> 返回 mock 接口数据 -> 接口请求 -> 回到(执行 mock 中间件 )
+
+mock 中间件的核心原理
+
+执行 mock 中间件 -> 读取特定目录下用于 mock 数据的本地 json 文件 -> 解析 json 文件 -> 通过接口 response 返回上述 json 数据
+
+```json
+// json格式
+{
+  "code": 0,
+  "msg": "success",
+  "data": {
+    "gray": true
+  }
+}
+```
+
+实现 mock 中间件、验证返回
