@@ -13,7 +13,8 @@
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     ],
     "no-use-before-define": "off",
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "no-plusplus": "off"
   },
   "overrides": [
     {
@@ -30,7 +31,12 @@
     // 解决webpack eslint别名一致性问题
     "import/resolver": {
       "alias": {
-        "map": [["pages", "./src/pages"]],
+        "map": [
+          ["pages", "./src/pages"],
+          ["@utils", "./src/utils"],
+          ["@components", "./src/components"],
+          ["common", "./src/common"]
+        ],
         "extensions": [".ts", ".tsx", ".js", ".jsx", ".json", ".d.ts"]
       }
     }

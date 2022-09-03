@@ -41,5 +41,5 @@ const webpackConfigDev = {
   },
 };
 
-// module.exports = smp.wrap(merge(webpackConfigBase, webpackConfigDev));
-module.exports = merge(webpackConfigBase, webpackConfigDev);
+module.exports = smp.wrap(merge(webpackConfigBase, webpackConfigDev));
+// module.exports = merge(webpackConfigBase, webpackConfigDev);

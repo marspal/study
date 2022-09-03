@@ -32,9 +32,9 @@ const webpackBaseConfig = {
         test: /\.tsx?$/,
         use: {
           loader: 'ts-loader',
-          options: {
-            transpileOnly: true,
-          },
+          // options: {
+          //   transpileOnly: true,
+          // },
         },
       },
       {
